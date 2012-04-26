@@ -15,7 +15,7 @@ public class graph {
 		String filename = "d:/good";
 		System.out.println(filename);
 		digraph nnn=new digraph();
-		  FileOutputStream out= new FileOutputStream(filename + ".dig");
+		  FileOutputStream out= new FileOutputStream(filename + ".dot");
 		  PrintStream p= new PrintStream( out );
 		 	p.println("digraph M {");     
 		  p.println("a->b");
@@ -24,7 +24,7 @@ public class graph {
 		  p.println("}");
 		  p.close();
 		  out.close();
-		  File f=new File(filename + ".dig");
+		  File f=new File(filename + ".dot");
 		  String outputfilepath=filename + ".png";
 		  nnn.generatedigraph(f,"png",outputfilepath);
 	}
