@@ -19,7 +19,8 @@ public class graph {
 		  PrintStream p= new PrintStream( out );
 		 	p.println("digraph M {");     
 		  p.println("a->b");
-		
+		  p.println("b->c");
+		  p.println("c->d");
 		  p.println("}");
 		  p.close();
 		  out.close();
